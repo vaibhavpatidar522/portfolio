@@ -26,7 +26,7 @@ const Footer = () => {
             <h1>Address:</h1>
           </Slide>
           <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
+            <p>176, Mohan Nagar , Ratlam (M.P) , India 457001</p>
           </Slide>
         </div>
         <div className="links">
@@ -38,7 +38,7 @@ const Footer = () => {
               <FiPhoneCall />
             </span>
             <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
+              <a href="tel:+917987228866">+(91) 7987228866</a>
             </Slide>
           </div>
           <div>
@@ -48,7 +48,7 @@ const Footer = () => {
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <a href="mailto:miladamiri@gmail.com">vaibhavpatidar522@gmail.com</a>
             </Slide>
           </div>
         </div>
@@ -59,21 +59,22 @@ const Footer = () => {
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
+              <a href="https://github.com/vaibhavpatidar522" target="_blank" rel="noopener noreferre">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+              <a href="https://www.linkedin.com/in/vaibhav36/" target="_blank" rel="noopener noreferre">
+                
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+              <a href="https://www.instagram.com/anotherfx.me/" target="_blank" rel="noopener noreferre">
                   <BsFacebook />
                 </a>
               </span>

@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineInstagram , AiFillGithub} from "react-icons/ai";
+
+import {  FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 
 const ProfComponent = () => {
+
+  const downloadCVHandler = () =>{
+    window.open("https://drive.google.com/file/d/1cwOl5y5cT4BOnVqCss_AqwXrBx3uMkFu/view?usp=sharing", '_blank', 'noopener,noreferrer');
+  }
+
   return (
     <Container id="home">
       <Slide direction="left">
@@ -13,30 +18,28 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">Milad Amiri</h1>
-          <h3>UX/UI Designer and graphic designer</h3>
+          <h1 className="green">Vaibhav</h1>
+          <h3>Full Stack Web Developer | MERN</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+            I started Web Development and design about 1 year ago and enjoyed <br/>much working with React.js , Node.js & Express.js and responsive Web Design <br/> to deliver exceptional customer experience.
           </p>
-          <button>Let's talk</button>
+          <button onClick={downloadCVHandler}>Download My CV</button>
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="/">
-                  <AiOutlineInstagram />
-                </a>
-              </span>
-              <span>
-                <a href="/">
-                  <GiEarthAmerica />
-                </a>
-              </span>
-              <span>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/vaibhav36/" target="_blank" rel="noopener noreferre">
                   <FaLinkedinIn />
+                </a>
+              </span>
+              <span>
+                <a href="https://github.com/vaibhavpatidar522" target="_blank" rel="noopener noreferre">
+                  <AiFillGithub />
+                </a>
+              </span>
+              <span>
+                <a href="https://www.instagram.com/anotherfx.me/" target="_blank" rel="noopener noreferre">
+                  <AiOutlineInstagram />
                 </a>
               </span>
             </div>
@@ -46,7 +49,8 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
+            // src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
+            src="/images/profile.png"
             alt="profile"
           />
         </Profile>
@@ -59,17 +63,19 @@ export default ProfComponent;
 
 const Container = styled.div`
   display: flex;
-  gap: 2rem;
-  padding-top: 3rem;
+  justify-content: space-between;
+  padding-top: 10rem;
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
   z-index: 1;
   @media (max-width: 840px) {
     width: 90%;
+    padding-top: 3rem;
   }
-
+  
   @media (max-width: 640px) {
+    padding-top: 3rem;
     flex-direction: column;
   }
 `;
