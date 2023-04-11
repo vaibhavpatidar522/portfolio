@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components'
-import ClientSlider from './ClientSlider';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Slide } from 'react-awesome-reveal';
 import Card from '../Card/Card';
