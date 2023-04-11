@@ -59,14 +59,14 @@ const Footer = () => {
           <div className="icons">
             <Zoom>
               <span>
-              <a href="https://github.com/vaibhavpatidar522" target="_blank" rel="noopener noreferre">
+              <a href="https://github.com/vaibhavpatidar522" target="_blank" rel="noopener noreferre noreferrer">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-              <a href="https://www.linkedin.com/in/vaibhav36/" target="_blank" rel="noopener noreferre">
+              <a href="https://www.linkedin.com/in/vaibhav36/" target="_blank" rel="noopener noreferre noreferrer">
                 
                   <AiFillLinkedin />
                 </a>
@@ -74,7 +74,7 @@ const Footer = () => {
             </Zoom>
             <Zoom>
               <span>
-              <a href="https://www.instagram.com/anotherfx.me/" target="_blank" rel="noopener noreferre">
+              <a href="https://www.instagram.com/anotherfx.me/" target="_blank" rel="noopener noreferre noreferrer">
                   <BsFacebook />
                 </a>
               </span>
