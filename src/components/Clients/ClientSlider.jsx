@@ -27,6 +27,7 @@ const ClientSlider = (props) => {
                 <p>{position}</p>
             </div>
         </Footer>
+        
     </Container>
   )
 }

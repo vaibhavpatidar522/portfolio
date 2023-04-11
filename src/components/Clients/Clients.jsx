@@ -4,41 +4,42 @@ import styled from 'styled-components'
 import ClientSlider from './ClientSlider';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Slide } from 'react-awesome-reveal';
+import Card from '../Card/Card';
 
-let clients = [
+const cardsData = [
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 3,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+      title: "Blog Post 1",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat mi sed enim vulputate, nec interdum sem facilisis. Morbi congue fermentum odio ac euismod. Praesent efficitur magna id elit molestie, in euismod nibh facilisis. Nullam at libero justo. ",
+      url: "https://example.com/post1",
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 4,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+      title: "Blog Post 1",
+      image: "https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80   ",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat mi sed enim vulputate, nec interdum sem facilisis. Morbi congue fermentum odio ac euismod. Praesent efficitur magna id elit molestie, in euismod nibh facilisis. Nullam at libero justo. ",
+      url: "https://example.com/post1",
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+      title: "Blog Post 1",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1415&q=80",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat mi sed enim vulputate, nec interdum sem facilisis. Morbi congue fermentum odio ac euismod. Praesent efficitur magna id elit molestie, in euismod nibh facilisis. Nullam at libero justo. ",
+      url: "https://example.com/post1",
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+      title: "Blog Post 1",
+      image: "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat mi sed enim vulputate, nec interdum sem facilisis. Morbi congue fermentum odio ac euismod. Praesent efficitur magna id elit molestie, in euismod nibh facilisis. Nullam at libero justo. ",
+      url: "https://example.com/post1",
     },
-]
+   
+    
+   
+    
+  ];
 var settings = {
     dots: true,
     infinite: true,
@@ -76,10 +77,16 @@ var settings = {
 
 const Clients = () => {
     const arrowRef = useRef(null);
-    let clientDisc = "";
-    clientDisc = clients.map((item, i) => (
-        <ClientSlider item={item} key={i}/>
-    ))
+//     let clientDisc = "";
+//     clientDisc = clients.map((item, i) => (
+//         <Card
+//   title="My Card Title"
+//   image="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+//   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec nunc nibh. Pellentesque luctus nulla nec mauris consequat suscipit. Sed ac pretium lectus, ut vestibulum nulla. Proin vitae tellus sit amet urna facilisis dignissim in ac magna."
+//   url="https://example.com/my-article"
+// />
+        // <ClientSlider item={item} key={i}/>
+    // ))
   return (
     <Container id='client'>
         <Slide direction="left">
@@ -88,7 +95,9 @@ const Clients = () => {
         </Slide>
         <Testimonials>
             <Slider ref={arrowRef} {...settings}>
-                {clientDisc}
+            {cardsData.map((cardData) => (
+        <Card key={cardData.url} {...cardData} />
+      ))}
             </Slider>
             <Buttons>
                 <button
@@ -99,6 +108,7 @@ const Clients = () => {
                 ><IoIosArrowForward/></button>
             </Buttons>
         </Testimonials>
+       
     </Container>
   )
 }

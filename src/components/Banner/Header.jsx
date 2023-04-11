@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { GiCandleFlame } from "react-icons/gi";
+
+import MyLogo from './MyLogo';
 
 const Header = () => {
     const [bar, setBar] = useState(false);
   return (
     <Container bar={bar}>
         <Logo>
-            <span className='green'><GiCandleFlame/></span>
-            <h1>Portfolio</h1>
+            <span className='green'>
+
+            
+           <MyLogo />
+            </span>
         </Logo>
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
