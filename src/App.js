@@ -3,7 +3,7 @@ import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
 import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
-import Projects from "./components/Projects/Projects";
+// import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
 function App() {  
   return (
@@ -13,13 +13,17 @@ function App() {
         <ProfComponent />
       </Banner>
       <Services />
-      <LightColor>
+      {/* <LightColor>
         <Projects />
       </LightColor>
       <Clients />
       <LightColor>
         <Footer />
+      </LightColor> */}
+      <LightColor>
+      <Clients />
       </LightColor>
+        <Footer />
     
     </Container>
     
